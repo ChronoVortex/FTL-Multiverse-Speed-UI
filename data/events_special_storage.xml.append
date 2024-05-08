@@ -1,0 +1,42 @@
+<mod:findName type="event" name="STORAGE_CHECK_BUTTON">
+  <mod-append:choice>
+    <text>Change your UI options.</text>
+    <event load="STORAGE_CHECK_UI_OPTIONS"/>
+  </mod-append:choice>
+</mod:findName>
+
+<event name="STORAGE_CHECK_UI_OPTIONS">
+  <text>Which UI element would you like to toggle?</text>
+
+  <choice req="speed_ui" lvl="0" max_lvl="0" blue="false">
+    <text>Toggle the Game Speed UI. [On]</text>
+    <event>
+      <metaVariable name="speed_ui" op="set" val="1"/>
+      <loadEvent>STORAGE_CHECK_UI_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="speed_ui" lvl="1" max_lvl="1" blue="false">
+    <text>Toggle the Game Speed UI. [Compact]</text>
+    <event>
+      <metaVariable name="speed_ui" op="set" val="2"/>
+      <loadEvent>STORAGE_CHECK_UI_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+
+
+  <choice req="speed_ui" lvl="2" max_lvl="2" blue="false">
+    <text>Toggle the Game Speed UI. [Off]</text>
+    <event>
+      <metaVariable name="speed_ui" op="set" val="0"/>
+      <loadEvent>STORAGE_CHECK_UI_OPTIONS</loadEvent>
+    </event>
+  </choice>
+
+  <choice req="pilot" max_group="999" blue="false" hidden="true">
+    <text>Nevermind.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+

@@ -1,0 +1,6 @@
+<mod:findLike type="scripts">
+			<mod-append:script>data/speed_UI_scripts/speed_UI.lua</mod-append:script><!--I put everything in a folder named for my mod so that way it doesn't intersect other lua scripts. This is usually the best practice.-->
+</mod:findLike>
+<mod:findLike type="events">
+	<mod-append:metaVariable name="speed_ui" op="set" val="0"/>
+</mod:findLike>

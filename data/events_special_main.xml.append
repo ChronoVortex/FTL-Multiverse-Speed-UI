@@ -1,0 +1,100 @@
+<mod:findName type="event" name="START_BEACON_REAL">
+  <mod-append:eventButton name="UI_SPEED_1">
+        <event load="SPEED_UI_FAST_1"/>
+        <image border="0">statusUI/speed_UI_fast_1</image>
+        <customLocation x="406" y="102"/>
+        <tooltip> </tooltip>
+        <inactiveTooltip>Unavailable!</inactiveTooltip>
+        <jumpClear>false</jumpClear>
+        <noDanger>false</noDanger>
+        <req lvl="0" max_lvl="0">speed_ui</req>
+        <hideInactive>true</hideInactive>
+  </mod-append:eventButton>
+  <mod-append:eventButton name="UI_SPEED_2">
+        <event load="SPEED_UI_FAST_2"/>
+        <image border="0">statusUI/speed_UI_fast_2</image>
+        <customLocation x="406" y="82"/>
+        <tooltip> </tooltip>
+        <inactiveTooltip>Unavailable!</inactiveTooltip>
+        <jumpClear>false</jumpClear>
+        <noDanger>false</noDanger>
+        <req lvl="0" max_lvl="0">speed_ui</req>
+        <hideInactive>true</hideInactive>
+  </mod-append:eventButton>
+  <mod-append:eventButton name="UI_SLOW_1">
+        <event load="SPEED_UI_SLOW_1"/>
+        <image border="0">statusUI/speed_UI_slow_1</image>
+        <customLocation x="466" y="102"/>
+        <tooltip> </tooltip>
+        <inactiveTooltip>Unavailable!</inactiveTooltip>
+        <jumpClear>false</jumpClear>
+        <noDanger>false</noDanger>
+        <req lvl="0" max_lvl="0">speed_ui</req>
+        <hideInactive>true</hideInactive>
+  </mod-append:eventButton>
+  <mod-append:eventButton name="UI_SLOW_2">
+        <event load="SPEED_UI_SLOW_2"/>
+        <image border="0">statusUI/speed_UI_slow_2</image>
+        <customLocation x="466" y="82"/>
+        <tooltip> </tooltip>
+        <inactiveTooltip>Unavailable!</inactiveTooltip>
+        <jumpClear>false</jumpClear>
+        <noDanger>false</noDanger>
+        <req lvl="0" max_lvl="0">speed_ui</req>
+        <hideInactive>true</hideInactive>
+  </mod-append:eventButton>
+  <mod-append:eventButton name="UI_SPEED_RESET">
+        <event load="SPEED_UI_RESET"/>
+        <image border="0">statusUI/speed_UI_reset</image>
+        <customLocation x="420" y="77"/>
+        <tooltip> </tooltip>
+        <inactiveTooltip>Unavailable!</inactiveTooltip>
+        <jumpClear>false</jumpClear>
+        <noDanger>false</noDanger>
+        <req lvl="0" max_lvl="0">speed_ui</req>
+        <hideInactive>true</hideInactive>
+  </mod-append:eventButton>
+
+
+  <!--Compact UI-->
+  <mod-append:eventButton name="UI_SPEED">
+          <event load="SPEED_UI_FAST_1"/>
+          <image border="0">statusUI/speed_UI_fast_compact</image>
+          <customLocation x="1248" y="608"/>
+          <tooltip> </tooltip>
+          <inactiveTooltip>Unavailable!</inactiveTooltip>
+          <req lvl="1" max_lvl="1">speed_ui</req>
+          <jumpClear>false</jumpClear>
+          <noDanger>false</noDanger>
+          <hideInactive>true</hideInactive>
+      </mod-append:eventButton>
+      <mod-append:eventButton name="UI_SLOW">
+          <event load="SPEED_UI_SLOW_1"/>
+          <image border="0">statusUI/speed_UI_slow_compact</image>
+          <customLocation x="1248" y="630"/>
+          <tooltip> </tooltip>
+          <inactiveTooltip>Unavailable!</inactiveTooltip>
+          <req lvl="1" max_lvl="1">speed_ui</req>
+          <jumpClear>false</jumpClear>
+          <noDanger>false</noDanger>
+          <hideInactive>true</hideInactive>
+      </mod-append:eventButton>
+      <mod-append:eventButton name="UI_SPEED_RESET">
+          <event load="SPEED_UI_RESET"/>
+          <image border="0">statusUI/speed_UI_reset_compact</image>
+          <customLocation x="1217" y="608"/>
+          <tooltip> </tooltip>
+          <inactiveTooltip>Unavailable!</inactiveTooltip>
+          <req lvl="1" max_lvl="1">speed_ui</req>
+          <jumpClear>false</jumpClear>
+          <noDanger>false</noDanger>
+          <hideInactive>true</hideInactive>
+    </mod-append:eventButton>
+</mod:findName>
+
+
+<event name="SPEED_UI_FAST_1"/>
+<event name="SPEED_UI_FAST_2"/>
+<event name="SPEED_UI_SLOW_1"/>
+<event name="SPEED_UI_SLOW_2"/>
+<event name="SPEED_UI_RESET"/>
